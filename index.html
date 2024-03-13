@@ -20,6 +20,10 @@
                 <i class="fa-solid fa-x" @click="deleteToDo(index)"></i>
             </li>
         </ul>
+        <div>
+            <input type="text" placeholder="Inserisici un nuovo ToDo" v-model="newToDo">
+            <button @click="addToDo()">Aggiungi</button>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
