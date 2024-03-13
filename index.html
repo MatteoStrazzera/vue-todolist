@@ -10,7 +10,7 @@
     
     <div id="app">
         <ul>
-            
+            <li v-for="toDo in toDoList" v-bind:class="{doneToDo: toDo.done}">{{toDo.text}}</li>
         </ul>
     </div>
 
