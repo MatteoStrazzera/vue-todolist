@@ -33,5 +33,13 @@ const { createApp } = Vue
         ]
       }
     },
-    
+    methods: {
+        deleteToDo(index){
+            console.log('eliminato');
+            this.toDoList.splice(index, 1)
+        }
+    },
+    mounted(){
+        console.log(this.toDoList);
+    }
   }).mount('#app')
